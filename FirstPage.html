@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Love Expression</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('mail.jpg'); /* путь к вашему изображению */
+            background-size: contain; /* чтобы изображение помещалось полностью в видимой области */
+            background-position: center; /* позиционируем изображение по центру */
+            background-repeat: no-repeat; /* не повторяем изображение */
+            font-family: Arial, sans-serif; /* установка шрифта */
+        }
+
+        .container {
+            min-height: 100vh; /* минимальная высота контейнера равная высоте окна браузера */
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; /* кнопка будет выровнена по нижнему краю */
+        }
+
+        .love {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px; /* отступ снизу для контейнера с текстом */
+        }
+
+        .love h2 span {
+            color: red;
+        }
+
+        .love a button {
+            font-size: 24px;
+            text-decoration: none;
+            padding: 10px 20px; /* увеличил отступы, чтобы кнопка была побольше */
+            border: 3px solid #ddd;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .love a button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+        }
+        audio {
+  display: none;
+}
+
+        .love button {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="love">
+            <a href="index.html"><button>Открыть письмо</button></a>
+            
+            
+            <audio controls autoplay>
+                <source src="paskal.mp3" type="audio/mpeg" />
+                <source src="paskal.mp3" type="audio/ogg" />
+                Ваш браузер не поддерживает HTML5 аудио. Вот взамен <a href="paskal.mp3">ссылка на аудио</a>.
+              </audio>
+              
+              
+        </div>
+    </div>
+</body>
+</html>

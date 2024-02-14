@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yes mood</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffcccc; /* Розовый фон */
+        }
+
+        .container {
+            position: relative;
+            width: 80%; /* Ширина контейнера */
+            max-width: 800px; /* Максимальная ширина контейнера */
+            height: 80vh; /* Высота контейнера */
+            overflow: hidden;
+            background-color: #ffcccc; /* Розовый фон */
+        }
+
+        video {
+            position: relative;
+            top: 50%; /* Смещаем видео на половину высоты контейнера */
+            left: 50%; /* Смещаем видео на половину ширины контейнера */
+            transform: translate(-50%, -50%); /* Центрируем видео */
+            min-width: 100%; /* Минимальная ширина видео */
+            min-height: 100%; /* Минимальная высота видео */
+            width: auto;
+            height: auto;
+        }
+
+        .content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .btn {
+            background-color: rgba(148, 0, 211, 0.5);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .btn:hover {
+            background-color: rgba(148, 0, 211, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video autoplay loop>
+            <source src="video.mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <div class="yes">
+                <a href="video2.html" class="btn">Еще открытки!!!</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
